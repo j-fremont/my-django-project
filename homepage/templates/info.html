@@ -7,38 +7,42 @@
 
 {% block content %}
 
-<h1>Example heading <span class="badge bg-secondary">New</span></h1>
-<h2>Example heading <span class="badge bg-secondary">New</span></h2>
-<h3>Example heading <span class="badge bg-secondary">New</span></h3>
-<h4>Example heading <span class="badge bg-secondary">New</span></h4>
-<h5>Example heading <span class="badge bg-secondary">New</span></h5>
-<h6>Example heading <span class="badge bg-secondary">New</span></h6>
 
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
+<div class="container">
+  <div class="row my-row-margin">
+    <h3>Cards <span class="badge bg-secondary">New</span></h3>
+  </div>
+  <div class="row my-row-margin">
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-row-margin">
+    <h3>Alerts <span class="badge bg-secondary">New</span></h3>
+  </div>
+  <div class="row my-row-margin">
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out!
+    </div>
+  </div>
 </div>
 
-<ul class="list-group">
-  <li class="list-group-item">An item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-
-<ul class="list-unstyled">
-  <li>This is a list.</li>
-  <li>It appears completely unstyled.</li>
-  <li>Structurally, it's still a list.</li>
-  <li>However, this style only applies to immediate child elements.</li>
-  <li>Nested lists:
-    <ul>
-      <li>are unaffected by this style</li>
-      <li>will still show a bullet</li>
-      <li>and have appropriate left margin</li>
-    </ul>
-  </li>
-  <li>This may still come in handy in some situations.</li>
-</ul>
- 
 {% endblock %}
