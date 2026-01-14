@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %}{% endblock %}</title>
-  {% load bootstrap5 %}
-  {% bootstrap_css %}
-  {% bootstrap_javascript %}
+	<title>{% block title %}{% endblock %}</title>
+	{% load bootstrap5 %}
+	{% bootstrap_css %}
+	{% bootstrap_javascript %}
 </head>
 
 <style>
-  .carousel-inner > .carousel-item > img {
-    min-height : 300px;
-    max-height : 600px;
-    width : 100%;
-  }
-  .my-row-margin {
-    margin-top: 20px;
-  }
+	.carousel-inner > .carousel-item > img {
+		min-height : 300px;
+		max-height : 600px;
+		width : 100%;
+	}
+	.my-row-margin {
+		margin-top: 20px;
+	}
 </style>
+
+
 
 {% load static %}
 
 <body>
 
-  <div class="container">
-    <ul class="nav bg-info">
-      <li class="nav-item">
-        <a class="nav-link link-light" href="/">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-light" href="/info">INFO</a>
-      </li>
-    </ul>
-    <div class="my-row-margin">
-      {% block content %}
-      {% endblock %}
-    </div>
-  </div>
+	<div class="container">
+		<ul class="nav bg-info">
+			<li class="nav-item">
+				<a class="nav-link link-light" href="/">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link link-light" href="/comments">COMMENTS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link link-light" href="/info">INFO</a>
+			</li>
+		</ul>
+		<div class="my-row-margin">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
 
 </body>
 </html>
